@@ -1,0 +1,14 @@
+Luu y: cach hoat dong cua heroku la no tao ra 1 server (node js) va 1 git cho du an do (sau khi minh chay npm run deploy:init de y la se thay 2 link: 1 link website 1 link git)
+
+heroku logs --tail // Check log tren server bao loi gi de debug
+
+heroku login
+heroku create
+git push heroku master // push to git cua heroku
+heroku open
+
+// Dung de kiem tra git url da tro trung git du an chua, truong nay nay hay xay ra khi chay heroku create nhieu lan, no ko tu xoa git url cua du an cu
+git remote -v
+
+git remote rm heroku
+git remote add heroku git@heroku.com:electric-meadow-15.git
