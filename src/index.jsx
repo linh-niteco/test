@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 import HomeContainer from '@Container/HomeContainer';
 import AboutContainer from '@Container/AboutContainer';
+import MapContainer from '@Container/MapContainer';
 import { PageNotFound } from '@Presentational';
 import store from './redux/store';
 
@@ -16,6 +17,7 @@ render(
       <Route path="/" component={Application}>
         <IndexRoute component={HomeContainer} />
         <Route path="about" component={AboutContainer} />
+        <Route path="map" component={MapContainer} />
         <Route path="*" component={PageNotFound} />
       </Route>
     </Router>
